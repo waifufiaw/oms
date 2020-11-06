@@ -1,0 +1,1056 @@
+/* b:skin css */
+/****  Custom CSS Section****/
+div#page {
+max-width: 900px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+}
+.back-to-top {
+position: fixed;/* Fixed/sticky position */
+bottom: 0.8em;/* Place the button at the bottom of the page */
+right: 0.9em; /* Place the button #px from the right */
+text-decoration: none;
+color: #dedede;
+font-size: 20px;
+padding: 1em;
+display: none;
+}
+.back-to-top:hover {
+text-decoration: none;
+color: #ff9177;
+}
+/*********************************
+**********************************
+Chapters, Posts, & Novels Template Start
+**********************************
+**********************************/
+/***********************************
+*general css class attributes
+***********************************/
+.smalltag {/*instead of using <small></small> tag*/
+font-size: smaller;
+}
+.centertext {
+text-align: center;
+}
+.posthidden { /*for expand/collapse javascript*/
+display: none;
+}
+.postshown {/*for expand/collapse javascript*/
+display: inline;
+}
+#ebed-disclaimer .postshown {
+display: block;
+}
+/***********************************
+*chapter start
+***********************************/
+.sensitivecontentchecker a {
+color: rgb(200,93,67, 1.0);
+}
+.ch_title {/* Refers to chapter title background */
+background-color: rgb(204, 125, 107, 0.1); /*change to #261c1a*/
+border-radius: 0px;
+padding: 15px;
+}
+.ch_title h3 {
+font-weight: bold;
+}
+.ch_body {
+/* Refers to chapter content background */
+background-color: rgb(1, 60, 75, 0.03);
+border-radius: 0px;
+padding: 10px;
+}
+#chapter-footer {
+box-sizing: border-box;
+height: 2em;
+padding: 0;
+margin: 0;
+margin-top: 1em;
+margin-bottom: 1.5em;
+}
+.ch_footer {/*refers to chapter navigation*/
+font-size: 1em;
+}
+.mcbox {/* Refers to mtlwaifu comment box styling */
+background-color: rgb(204, 125, 107, 0.1);
+border-radius: 0px;
+padding: 15px;
+}
+.mcbox a {
+color: inherit;
+}
+.fa-gradient-orange{
+background: -webkit-gradient(linear, left top, left bottom, from(#cb785d), to(#ff9177));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+padding-right: 0.2em;
+}
+.ms::before {/* Refers to color of 'mtlwaifu says' */
+content: "mtlwaifu says: ";
+color: #ff9177;
+font-weight: bold;
+}
+/***********************************
+*chapter stop
+***********************************/
+/***********************************
+*novel start
+***********************************/
+/*Novel CSS Template
+*/
+#novelinfo {
+text-align: center;
+padding-bottom: 20px;
+}
+#novelsynopsis {
+padding-top: 10px;
+padding-bottom:10px;
+}
+.smalltag {
+font-size: smaller;
+}
+.centertext {
+text-align: center;
+}
+.boldtext {
+font-weight: bold;
+}
+.fancify { /*color of header (ex. title, genre, only*/
+color: #ff9177;
+font-weight: bold;
+}
+div.novelimg {
+margin: auto;
+display: block;
+border: 10px solid;
+border-image: linear-gradient(195deg, rgba(4,81,97,1), rgba(203,120,93,1)) 1;
+padding:20px;
+width:200px;
+}
+div.synopsis { /*style for synopsis container*/
+background-color: rgb(4,81,97,0.4);
+border-radius: 15px;
+padding: 20px;
+}
+div.ebed_warning {
+background-color: rgb(200,93,67,0.4);
+border-radius: 15px;
+padding: 20px;
+}
+/***********************************
+*novel stop
+***********************************/
+/***********************************
+*chapter post start
+***********************************/
+.readherelink {
+border-bottom: 2px solid #dedede;
+}
+.chpost_body {
+background-color: rgb(1,5,12,1.0);
+border-radius: 10px;
+padding: 25px;
+color: #dedede
+}
+.chpost_body .mcbox {
+border: solid rgb(204 , 125 , 107 , 0.5);
+border-radius: 15px;
+background-color: transparent;
+}
+.novdisclaimer1::before {
+content: 'Warning';
+color: tomato;
+font-weight: bold;
+}
+.novdisclaimer2::before {
+content: ' Novel contains mature themes. Reader discretion is advised.';
+color: #dedede;
+font-weight: bold;
+}
+/***********************************
+*chapter post stop
+***********************************/
+/*********************************
+**********************************
+Chapters, Posts, & Novels Template Stop
+**********************************
+**********************************/
+/*** Custom Website CSS Start***/
+/*** Custom Homepage Header CSS ***/
+/* testing to add header background image
+*
+*UPDATE: It's too big on mobile.
+*I don't know how to hide it on mobile
+*Disabling for now
+/*.centered-top-container {
+background-image: url(https://1.bp.blogspot.com/-NiDEjhbQiL4/X5ZdHfOjQBI/AAAAAAAAAMY/j9sPMUW2jmkRl2682Tu2K9I2hVliblzwwCPcBGAYYCw/s1366/pxfueltranslateMESS.jpg);
+background-attachment: fixed; /* gives a kind of parallex effect when 'fixed'
+background-repeat: no-repeat;
+background-position: bottom center;
+background-size: cover;
+} */
+/*** Custom Homepage Slideshow CSS ***/
+/*
+* jQuery Nivo Slider v3.2
+* https://nivo.dev7studios.com
+*
+* Copyright 2012, Dev7studios
+* Free to use and abuse under the MIT license.
+* https://www.opensource.org/licenses/mit-license.php
+*/
+/* The Nivo Slider styles */
+.nivoSlider {
+position:relative;
+height:auto;
+width:100%;
+height:auto;
+overflow: hidden;
+font:normal 400 12px Lato /* nivo slider caption font */
+}
+.nivoSlider img {
+position:absolute;
+top:0px;
+left:0px;
+max-width: none;
+}
+.nivo-main-image {
+display: block !important;
+position: relative !important;
+width: 100% !important;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+border:0;
+padding:0;
+margin:0;
+z-index:6;
+display:none;
+background:white;
+filter:alpha(opacity=0);
+opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+display:block;
+position:absolute;
+z-index:5;
+height:100%;
+top:0;
+}
+.nivo-box {
+display:block;
+position:absolute;
+z-index:5;
+overflow:hidden;
+}
+.nivo-box img { display:block; }
+/* Caption styles */
+.nivo-caption {
+position:absolute;
+left:0px;
+bottom:0px;
+background:#000;
+color:#fff;
+width:100%;
+z-index:8;
+padding: 5px 10px;
+opacity: 0.8;
+overflow: hidden;
+display: none;
+-moz-opacity: 0.8;
+filter:alpha(opacity=8);
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+padding:5px;
+margin:0;
+}
+.nivo-caption a {
+display:inline !important;
+}
+.nivo-html-caption {
+display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+position: absolute;
+top: 45%;
+z-index: 9;
+cursor: pointer;
+display: block;
+width: 30px;
+height: 30px;
+background: url(https://1.bp.blogspot.com/-lERcXuf5118/UasRKprns2I/AAAAAAAAFa0/c6LU3T6J1lA/s1600/arrows.png) no-repeat;
+text-indent: -9999px;
+border: 0;
+-webkit-transition: all 200ms ease-in-out;
+-moz-transition: all 200ms ease-in-out;
+-o-transition: all 200ms ease-in-out;
+transition: all 200ms ease-in-out;
+opacity: 0;
+left: 15px;
+}
+.nivo-prevNav {
+left:0px;
+}
+.nivo-nextNav {
+right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+text-align:center;
+padding: 15px 0;
+}
+.nivo-controlNav a {
+cursor: pointer;
+background: url(https://2.bp.blogspot.com/-4xnqpjcqDdY/UasRKo0JRLI/AAAAAAAAFa4/ej43qHFKnlA/s1600/bullets.png) no-repeat;
+text-indent: -9999px;
+border: 0;
+margin: 0 2px;
+display: inline-block;
+height: 22px;
+width: 22px
+}
+.nivo-controlNav a.active {
+font-weight:bold;
+background-position: 0 -22px;
+}
+a.nivo-nextNav {
+background-position: -30px 0;
+left: auto;
+right: 15px;
+}
+#slider:hover .nivo-directionNav a {
+opacity:1
+}
+/*** Custom Sidebar CSS***/
+/* Sidebar Background
+*/
+.sidebar-container {
+background-image: url(https://1.bp.blogspot.com/-QOn7mLbc9tk/X55cT15_BNI/AAAAAAAAAR0/VKnjCgSf4vwm1m9sOMH1ki6-jAFtEXBgACLcBGAsYHQ/s0/dark%2Bdenim%2B3%2Btransparent%2Btexture-min.png); /* sidebar background texture */
+background-repeat: repeat;
+}
+/*** Custom Widget CSS***/
+/* Profile Avatar CSS
+*/
+.profile-container {
+position: relative;
+width: 50%;
+margin-left: auto; /* this left/right centers the container*/
+margin-right: auto;
+}
+.image {
+opacity: 1;
+display: block;
+width: 100%;
+height: auto;
+border-radius:50%;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+.middle {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+border-raidus:50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+.profile-container:hover .image {
+opacity: 0.3;
+}
+.profile-container:hover .middle {
+opacity: 1;
+}
+.profilemtlsays {
+color: #ffc06e; /*This should be the color of links*/
+font-weight: bold;
+text-align: center;
+padding-top: 16px;
+}
+.profilehovertext {
+/*background-color: #ffc06e; /*this doesn't wrap well for some reason*/
+color: white; /* legibility is important */
+border-radius:5px;
+font-size: 16px;
+text-align; center;
+}
+.profiletalk {
+color: rgba(255, 255, 255, 0.54); /* this should match sidebar title font color */
+font-size:normal 400 14px Montserrat, sans-serif; /*change this to size of sidebar font-size*/
+text-align: center;
+padding-top: 10px;
+}
+/*** Custom Website Features ***/
+/*'Post' Page margins should match header width
+*Removes 'share' icons (that gap on the left side of 'Post' Page
+*Credits: --- post alignment by irsah -- */
+@media screen and (min-width: 1024px) {
+.post-sidebar {
+width: 70px;
+}
+body.item-view .widget.Blog .post {
+width: auto;
+}
+body.item-view .widget.PopularPosts,
+body.item-view .post-outer-container .inline-ad,
+#comments {
+margin-left: 70px;
+width: auto;
+}
+}
+.post-sidebar .post-share-buttons {
+visibility: hidden;
+}
+/*Multitab Feature
+*/
+/*----- XOMISSE Multi-Tabbed Content -----*/
+ul.xo-tab-links {
+margin: 0 auto;
+padding: 0;
+list-style: none;
+}
+ul.xo-tab-links li {
+background: none;
+color: rgb(255,255,255,0.54);
+display: inline-block;
+padding: 10px 20px;
+cursor: pointer;
+transition:all linear 0.15s;
+}
+ul.xo-tab-links li.current {
+background: rgb(4,81,97,0.4);
+color: #dedede;
+}
+.xo-tab-content {
+display: none;
+background: rgb(4,81,97,0.4);
+padding: 20px;
+}
+.xo-tab-content.current {
+display: inherit;
+}
+/*Scroll progress indicator feature
+*/
+.scroll-progress-indicator {
+width: 0;
+height: 2px;
+background: #ffc06e;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 99999;
+box-shadow: 0 -1px 4px 2px rgb(171 132 80);
+}
+/*custom 404 page
+/Sheepy*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+.backbtn {
+float: left;
+margin-left: 25vw;
+padding: 0;
+display: inline-flex;
+font-size: 2em;
+}
+.homebtn {
+float: right;
+margin-right: 25vw;
+padding: 0;
+display: inline-flex;
+font-size: 2em;
+}
+.positioner404 {
+padding: 0;
+margin: 0;
+top: 0; bottom: 0; left: 0; right: 0;
+position: fixed;
+min-height: 100vh;
+}
+.container-error {
+text-align: center;
+z-index: 100;
+width: 100vw;
+height: 100vh;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+padding: 0;
+background: rgb(20,43,49);
+background: linear-gradient(0deg, rgba(20,43,49,1) 29%, rgba(200,93,67,1) 66%, rgba(255,192,110,1) 100%);
+}
+.text {
+color: white;
+font-size: 2em;
+font-family: helvetica;
+font-weight: bold;
+margin: auto;
+padding: 0;
+width: auto;
+}
+.text h1 {
+font-size: 2em;
+padding: 0;
+margin-bottom:0;
+text-shadow: 2px 2px rgb(112, 54, 26);
+}
+.text h5 {
+padding: 0;
+margin-top: 0;
+text-shadow: 2px 2px rgb(112, 54, 26);
+font-size: 0.9em;
+}
+.contact404 {
+font-size: 1.5em;
+border-bottom: 2px dotted red;
+margin: 0;
+}
+.btn {
+background-color: transparent;
+border-radius: 10px;
+border: 2px solid #fff;
+font-weight: normal;
+max-width: 150px;
+transition: all .5s;
+text-transform: uppercase;
+}
+.btn:hover {
+background-color: #fff;
+color: #c85d43;
+}
+.btn a {
+color: inherit;
+text-decoration: none;
+}
+@keyframes bob {
+0% {
+top: 0;
+}
+50% {
+top: 0.2em;
+}
+}
+.scene {
+display: inline-block;
+vertical-align: middle;
+margin-top: 25vh;
+}
+.sheep {
+display: inline-block;
+position: relative;
+font-size: 1.7em;
+}
+.sheep * {
+transition: transform 0.3s;
+}
+.sheep .top {
+position: relative;
+top: 0;
+animation: bob 1s infinite;
+}
+.sheep:hover .head {
+transform: rotate(0deg);
+}
+.sheep:hover .head .eye {
+width: 1.25em;
+height: 1.25em;
+}
+.sheep:hover .head .eye:before {
+right: 30%;
+}
+.sheep:hover .top {
+animation-play-state: paused;
+}
+.sheep .head {
+display: inline-block;
+width: 5em;
+height: 5em;
+border-radius: 100%;
+background: #211e21;
+vertical-align: middle;
+position: relative;
+top: 1em;
+transform: rotate(30deg);
+}
+.sheep .head:before {
+content: '';
+display: inline-block;
+width: 80%;
+height: 50%;
+background: #211e21;
+position: absolute;
+bottom: 0;
+right: -10%;
+border-radius: 50% 40%;
+}
+.sheep .head:hover .ear.one, .sheep .head:hover .ear.two {
+transform: rotate(0deg);
+}
+.sheep .head .eye {
+display: inline-block;
+width: 1em;
+height: 1em;
+border-radius: 100%;
+background: white;
+position: absolute;
+overflow: hidden;
+}
+.sheep .head .eye:before {
+content: '';
+display: inline-block;
+background: black;
+width: 50%;
+height: 50%;
+border-radius: 100%;
+position: absolute;
+right: 10%;
+bottom: 10%;
+transition: all 0.3s;
+}
+.sheep .head .eye.one {
+right: -2%;
+top: 1.7em;
+}
+.sheep .head .eye.two {
+right: 2.5em;
+top: 1.7em;
+}
+.sheep .head .ear {
+background: #211e21;
+width: 50%;
+height: 30%;
+border-radius: 100%;
+position: absolute;
+}
+.sheep .head .ear.one {
+left: -10%;
+top: 5%;
+transform: rotate(-30deg);
+}
+.sheep .head .ear.two {
+top: 2%;
+right: -5%;
+transform: rotate(20deg);
+}
+.sheep .body {
+display: inline-block;
+width: 7em;
+height: 7em;
+border-radius: 100%;
+background: white;
+position: relative;
+vertical-align: middle;
+margin-right: -3em;
+}
+.sheep .legs {
+display: inline-block;
+position: absolute;
+top: 80%;
+left: 10%;
+z-index: -1;
+}
+.sheep .legs .leg {
+display: inline-block;
+background: #141214;
+width: 0.5em;
+height: 2.5em;
+margin: 0.2em;
+}
+.sheep:before {
+content: '';
+display: inline-block;
+position: absolute;
+top: 112%;
+width: 100%;
+height: 10%;
+border-radius: 100%;
+background: rgba(0, 0, 0, 0.4);
+}
+@media (orientation:portrait) and (min-width: 700px){
+.scene {
+/* margin-top: 28em; */
+margin-bottom:2em;
+}
+.backbtn {
+margin-left: 20vw;
+}
+.homebtn {
+margin-right: 20vw;
+}
+}
+@media (orientation:portrait) and (max-width: 900px){
+.scene {
+margin-bottom: 2em;
+font-size:0.5em;
+}
+.backbtn {
+margin-left: 10vw;
+}
+.homebtn {
+margin-right: 10vw;
+}
+.text, .backbtn, .homebtn {
+font-size: 1em;
+}
+}
+@media screen and (max-height: 768px) and (min-width: 700px) and (orientation: landscape){
+.scene {
+/* margin-top: 20em; */
+font-size: 0.4em;
+}
+.text, .contact404, .backbtn, .homebtn{
+font-size: 1em;
+}
+.backbtn {
+/* margin-left: 30vw; */
+}
+.homebtn {
+/* margin-right: 30vw; */
+}
+}
+@media screen and (max-height: 768px) and (max-width: 700px) {
+.scene {
+/* margin-top: 20vh; */
+font-size: 0.4em;
+}
+.text, .contact404, .backbtn, .homebtn{
+font-size: 0.8em;
+}
+.backbtn {
+margin-left: 15vw;
+}
+.homebtn {
+margin-right: 15vw;
+}
+}
+@media screen and (max-height: 768px) and (max-width: 700px) and (orientation: landscape){
+.scene {
+margin-top: 20vh;
+font-size: 0.4em;
+}
+.text, .contact404, .backbtn, .homebtn{
+font-size: 0.8em;
+}
+.backbtn {
+margin-left: 32vw;
+}
+.homebtn {
+margin-right: 32vw;
+}
+}
+@media only screen and (max-width: 350px) and (orientation:portrait) {
+.scene {
+/* font-size: 0.6em; */
+margin-bottom: 2em;
+margin-top: 30vh;
+}
+.text, {
+font-size: 0.7em;
+}
+.backbtn {
+margin-left: 3vw;
+}
+.homebtn {
+margin-right: 3vw;
+}
+}
+@media screen and (min-width: 350px) and (orientation:portrait) {
+.scene {
+margin-bottom: 2em;
+}
+.backbtn {
+margin-left: 18vw;
+}
+.homebtn {
+margin-right: 18vw;
+}
+.text {
+font-size: 1em;
+}
+}
+@media screen and (min-width: 350px) and (orientation:landscape) {
+.scene {
+margin-bottom: 2em;
+}
+.backbtn {
+margin-left: 18vw;
+}
+.homebtn {
+margin-right: 18vw;
+}
+.text {
+font-size: 1em;
+}
+}
+@media screen and (max-width: 600px) and (orientation:landscape) {
+.scene {
+margin-top: 0.2em;
+}
+}
+@media screen and (min-width: 730px) {
+.backbtn {
+margin-left:30vw;
+}
+.homebtn {
+margin-right:30vw;
+}
+}
+@media screen and (min-width: 730px) and (orientation:portrait) {
+.scene {
+margin-top: 27vh;
+margin-bottom:7vh;
+}
+.sheep {
+font-size: 1.4em;
+}
+.text h1{
+font-size: 2.8em;
+}
+.backbtn {
+margin-left:20vw;
+}
+.homebtn {
+margin-right: 20vw;
+}
+.text h5, .backbtn, .contact404, .homebtn {
+font-size: 1.7em;
+}
+}
+.ContactForm input,
+.ContactForm textarea {
+color : black;
+}
+.contactmesidebar {
+font-size: $(.body.widget.title.font.large);
+color: $(.body.widget.title.color);
+}
+#customcontactform {
+box-sizing: border-box;
+}
+/* CUSTOM CONTACT FORM BY XOMISSE */
+.contact-form-widget {
+/* CHANGE WIDTH OF CONTAINER */
+max-width: 100%;
+padding-right: 10px;
+/* padding: 20px; */
+/* background: #FFFFFF; /* CHANGE BACKGROUND COLOUR OF CONTAINER */ */
+color: #000; /* CHANGE TEXT COLOUR OF CONTAINER */
+border: 0px solid #EEEEEE; /* CHANGE BORDER OF CONTAINER */
+border-radius: 15px;
+margin: auto; /* REMOVE IF YOU DON'T WANT IT CENTERED */
+margin-top:-3em;
+}
+.contact-form-name, .contact-form-email, .contact-form-email-message { width: 100%; max-width: 500px; /* CHANGE WIDTH OF FORM ENTRIES */ }
+.contact-form-button-submit {
+border: 1px solid #999999; /* CHANGE BORDER OF SEND BUTTON */
+border-margin: 5px;
+background: #EEEEEE;  /* CHANGE BACKGROUND COLOR OF SEND BUTTON */
+color: #333333;  /* CHANGE TEXT COLOR OF SEND BUTTON */
+width: 30%;  /* CHANGE WIDTH OF SEND BUTTON */
+margin: 10px 0px;
+}
+.contact-form-button-submit:hover{
+border: 1px solid #999999; /* CHANGE BORDER OF HOVER SEND BUTTON */
+background: #666666;  /* CHANGE BACKGROUND COLOR OF HOVER SEND BUTTON */
+color: #FFFFFF;  /* CHANGE TEXT COLOR OF HOVER SEND BUTTON */
+}
+.contact-form-widget #required {color: tomato; /* CHANGE ASTERISK COLOR */}
+.contact-form-widget p { margin-bottom: 5px; /* CHANGE SPACE BETWEEN TEXT AND FIELD */}
+.contact-form-cross {margin-left: 5px !important;}
+.contact-form-error-message-with-border {
+background: #eeeeee; /* CHANGE BACKGROUND OF OF ERROR MSG */
+border: 1px solid #333333; /* CHANGE BORDER OF ERROR MSG */
+bottom: 0;
+box-shadow: none;
+color: #666;  /* CHANGE TEXT COLOR OF ERROR MSG */
+font-size: 12px; /* CHANGE FONT SIZE OF ERROR MSG */
+padding: 5px;
+font-weight: bold; /* CHANGE WEIGHT OF ERROR MSG */
+text-align: center;
+}
+/* END CUSTOM CONTACT FORM BY XOMISSE */
+/*light mode code start*/
+body.light-mode {
+color: black;
+background-color:#f9f9f9;
+}
+body.light-mode .sidebar-container {
+background-color: #333333;
+background-image: none;
+}
+body.light-mode .centered-top-container, body.light-mode .centered-top-placeholder {
+background: #f9f9f9;
+}
+body.light-mode .widget.Blog .post.no-featured-image, body.light-mode .widget.PopularPosts .post.no-featured-image {
+background-color: #302c24;
+}
+body.light-mode .sidebar-container .widget .title {
+color: #ffffff;
+}
+body.light-mode .sidebar-container .profiletalk {
+color: #ffffff;
+}
+body.light-mode .main .widget .title {
+color: #0000008a;
+}
+body.light-mode .fancify {
+color: #0b2c32;
+}
+body.light-mode .lightfancy {
+color:#ff9177;f
+}
+body.light-mode a {
+color: tomato;
+}
+body.light-mode .sidebar-container a {
+color: #ff9177;
+}
+body.light-mode .post.no-featured-image .post-title, body.light-mode .post.no-featured-image .post-title {
+color: #f9f9f9;
+}
+body.light-mode .no-featured-image {
+color: #dedede;
+}
+body.light-mode .post.no-featured-image .post-title, body.light-mode .post.no-featured-image .post-title a { /*not sure about making non-image titles white*/
+color: #f9f9f9;
+}
+body.light-mode .post.no-featured-image .post-footer, body.light-mode .post.no-featured-image .post-footer a, body.light-mode .post.no-featured-image .post-footer button {
+color: #bf8b38;
+}
+body.light-mode .centered-top-container .svg-icon-24, body.light-mode .centered-top-placeholder .svg-icon-24 {
+fill: #0000008a;
+}
+body.light-mode .widget.Header h1, body.light-mode .widget.Header h1 a {
+color: #000000;
+}
+body.light-mode .widget.Header p {
+color: #0000008a;
+}
+body.light-mode .snippet-thumbnail .post-header {
+background-color: #f9f9f9;
+}
+body.light-mode .post-header, body.light-mode .post-header a, body.light-mode .post-header button {
+color: #0000008a;
+}
+body.light-mode .post-title, body.light-mode .post-title a {
+color: #000000;
+}
+body.light-mode .post-body {
+color: #000000;
+}
+body.light-mode #comments .comment .comment-header .user,#comments .comment .comment-header .user a {
+color: tomato;
+}
+body.light-mode #comments .comment .comment-body, body.light-mode #comments .comment .comment-content, body.light-mode #comments .comment .comment-header .datetime, body.light-mode #comments .comment .comment-header .datetime a {
+color: #261c1a;
+}
+body.light-mode .back-to-top {
+color: #319296;
+}
+body.light-mode .back-to-top:hover {
+text-decoration: none;
+color: #bf8b38;
+}
+body.light-mode .ContactForm, body.light-mode .contact-form-widget, body.light-mode .form{
+color: white;
+}
+body.light-mode .xo-tab-content.current {
+color: #0000008a;
+}
+body.light-mode ul.xo-tab-links li.current {
+color: #261c1a;
+}
+body.light-mode ul.xo-tab-links li{
+color: #261c1a;
+}
+body.light-mode .ms::before {
+color: #319296;
+}
+body.light-mode .chpost_body {
+background-color: #302c24;
+}
+body.light-mode .readherelink {
+border-bottom: 2px solid #dedede;
+}
+body.light-mode div.synopsis, body.light-mode ul.xo-tab-links li.current, body.light-mode .xo-tab-content {
+background-color: rgb(200,93,67,0.4);
+}
+body.light-mode div.ebed_warning {
+background-color: rgb(4,81,97,0.4);
+}
+.sticky .light-mode-btn {
+padding: 1px 4px;
+border: 2px solid transparent;
+border-radius: 50%;
+position: absolute;
+top: 5px;
+right: 1px;
+z-index: 10000;
+font-size: 1.5em;
+cursor: pointer;
+float:right;
+}
+.light-mode-btn {
+border-radius: 50%;
+position: absolute;
+top: 48px;
+right: 1px;
+z-index: 10000;
+font-size: 1.5em;
+cursor: pointer;
+float: right;
+padding:0;
+}
+@media (max-width:760px) and (orientation:portrait){
+.light-mode-btn {
+margin-top: -25px;
+font-size: 1.4em;}
+.sticky .light-mode-btn {
+margin-top: 0;
+}
+}
+@media (max-width:800px) and (orientation:landscape){
+.light-mode-btn {
+margin-top: -5px;}
+.sticky .light-mode-btn {
+margin-top:0;
+}
+}
+/*light mode code stop*/
+/*popper start*/
+.tippyme {
+border-bottom: 2px dotted tomato;
+}
+.tippy-box[data-theme~='grad-darkgreengrey'] {
+background: rgb(22,48,52);
+background: -moz-linear-gradient(180deg, rgba(22,48,52,1) 0%, rgba(51,51,51,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(22,48,52,1) 0%, rgba(51,51,51,1) 100%);
+background: linear-gradient(180deg, rgba(22,48,52,1) 0%, rgba(51,51,51,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#163034",endColorstr="#333333",GradientType=1);
+}
+.tippy-box[data-theme~='grad-darkgreengrey'][data-placement^='top'] > .tippy-arrow::before {
+border-top-color: #333333;
+}
+.tippy-box[data-theme~='grad-darkgreengrey'][data-placement^='bottom'] > .tippy-arrow::before {
+border-bottom-color: #333333;
+}
+.tippy-box[data-theme~='grad-darkgreengrey'][data-placement^='left'] > .tippy-arrow::before {
+border-left-color: #333333;
+}
+.tippy-box[data-theme~='grad-darkgreengrey'][data-placement^='right'] > .tippy-arrow::before {
+border-right-color: #333333;
+}
